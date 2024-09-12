@@ -5,7 +5,7 @@ function fibs(n) {
 
   for (let i = 0; i < n; i++) {
     fibSequence.push(a);
-    [a, b] = [b, a + b]; // Destructuring assignment to update a and b
+    [a, b] = [b, a + b];
   }
 
   return fibSequence;

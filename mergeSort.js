@@ -7,10 +7,10 @@ function mergeSort(arr) {
     let sortedArray = [];
     let arrL = [];
     let arrR = [];
-    let midPoint = Math.floor(arr.length / 2 - 1);
+    let midPoint = Math.floor(arr.length / 2);
 
-    arrL = mergeSort(arr.slice(0, midPoint + 1));
-    arrR = mergeSort(arr.slice(midPoint + 1));
+    arrL = mergeSort(arr.slice(0, midPoint));
+    arrR = mergeSort(arr.slice(midPoint));
 
     while (arrL.length && arrR.length) {
       if (arrL[0] < arrR[0]) {
@@ -24,4 +24,4 @@ function mergeSort(arr) {
 }
 
 console.log(mergeSort(array1));
-console.log(mergeSort(array2));
+// console.log(mergeSort(array2));
